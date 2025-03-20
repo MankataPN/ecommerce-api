@@ -2,6 +2,7 @@ import { json } from "express";
 import mongoose, { Schema, model } from "mongoose";
 import normalize from "normalize-mongoose";
 
+
 const userSchema = new Schema({
     username: {type: String, required: true, unique: true},
     email: {type: String, required: true, unique: true},
